@@ -1,0 +1,21 @@
+{
+  "name": "template-react-tailwind",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "swiper": "^11.2.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^3.4.17",
+    "vite": "^4.0.0"
+  }
+}

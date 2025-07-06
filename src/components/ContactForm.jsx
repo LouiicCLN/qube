@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="bg-white mt-4 py-16 px-4">
+    <section id="contact" className="bg-white py-16 px-4">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-8 text-[#00C853]">
           Contact

@@ -20,7 +20,7 @@ const Navbar = () => {
           <img
             src={Logo}
             alt="Qube Studio Logo"
-            className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
+            className="h-10 sm:h-16 md:h-14 lg:h-14 w-auto object-contain"
           />
         </a>
 

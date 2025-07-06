@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
+import About  from "../src/components/About";
 import Galerie from "../src/components/Galerie";
 import ContactForm from "../src/components/ContactForm";
 import useInView from "./useInView";
@@ -10,45 +11,23 @@ export default function QubeStudioSite() {
 
   return (
     <div className="scroll-smooth bg-gray-100 text-gray-900">
-      <div>
-      <Navbar />
+        <Navbar />
+      <div className="sticky top-0 bg-gray-100 h-screen w-screen">
+        {/* <Navbar /> */}
+        {/* Hero Section */}
+        <Hero />
+        {/* À propos */}
 
-      {/* Hero Section */}
-      <Hero />
       </div>
-      {/* À propos */}
-      <section
-      id="about"
-      ref={ref}
-      className={`relative z-10 -mt-10 pt-40 bg-white rounded-2xl shadow-2xl px-6 md:px-16 py-12 transition-all duration-700 rounded-t-[4rem]`}
-      >
-   
-        <h2 className="text-4xl font-bold mb-10 text-center text-[#00C853]">
-          À propos de Qube Studio
-        </h2>
 
-        <div className="flex flex-col md:flex-row items-center gap-10">
-          <div className="w-full md:w-1/2">
-            <img
-              src="../src/images/pop.png"
-              alt="Team Qube Studio"
-              className="rounded-xl shadow-md object-cover w-full h-full"
-            />
-          </div>
-          <div className="w-full md:w-1/2 flex items-center">
-            <p className="text-gray-700 leading-relaxed text-lg">
-              Basé à <strong>La Réunion</strong>, <strong>Qube Studio</strong> est dirigé par <strong>Julien Dalleau</strong>. <br /><br />
-              Nous aidons commerçants et entrepreneurs à construire une <span className="font-semibold text-black">identité visuelle forte</span> et un <span className="font-semibold text-black">branding impactant</span>.
-            </p>
-          </div>
-        </div>
-      </section>
+      <div className="bg-gray-100 h-screen w-screen">
+        <About />
 
       {/* Services */}
       <section
         id="services"
-        className="relative z-10 mt-4 bg-white py-20 px-6 md:px-16 transition-opacity duration-700 ease-out"
-      >
+        className="relative z-10 bg-white py-20 px-6 md:px-16 transition-opacity duration-700 ease-out"
+        >
         <h2 className="text-4xl font-bold text-center text-[#00C853] mb-16">
           Nos Services
         </h2>
@@ -87,11 +66,11 @@ export default function QubeStudioSite() {
       <Galerie />
       <ContactForm />
 
-
-      {/* Footer */}
       <footer className="text-center py-6 bg-black text-white mt-10">
         &copy; 2025 Qube Studio. Tous droits réservés.
       </footer>
+      
+    </div> 
     </div>
   );
 }

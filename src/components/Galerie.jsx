@@ -15,7 +15,7 @@ const images = [
 
 const Galerie = () => {
   return (
-    <section id="galerie" className="py-20 mt-4 bg-white text-black">
+    <section id="galerie" className="py-20 bg-white text-black">
       <h2 className="text-4xl font-bold text-center mb-10 text-[#00C853]">Galerie</h2>
 
       <div className="max-w-6xl mx-auto px-4">
